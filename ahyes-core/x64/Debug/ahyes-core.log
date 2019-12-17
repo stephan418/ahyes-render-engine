@@ -1,2 +1,4 @@
 ﻿  Window.cpp
-  ahyes-core.vcxproj -> C:\Users\Stefan Kössner\Documents\GitHub\ahyes-render-engine\x64\Debug\ahyes-core.exe
+  ahyes-core.cpp
+  Code wird generiert...
+C:\Users\Stefan Kössner\Documents\GitHub\ahyes-render-engine\ahyes-core\Window.cpp(34,18): error C2065:  "renderer": nichtdeklarierter Bezeichner

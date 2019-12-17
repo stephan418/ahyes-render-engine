@@ -6,7 +6,10 @@
 
 int main()
 {
+	int yes;
     std::cout << "Hello World!\n";
-	Window w = Window(10, 10,(char*) "Test");
+	Window w = Window(720, 560,(char*) "Test");
+	std::cin >> yes;
 	//TODO Import opengl
+	return -255555;
 }

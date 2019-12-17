@@ -1,4 +1,7 @@
 #pragma once
+
+#include <SDL.h>
+
 class Window
 {
 private:
@@ -7,6 +10,8 @@ private:
 	char* _Name;
 public:
 	Window(int Width, int Height, char* Name);
+	void Loop();
+	void Render();
 	~Window();
 private:
 	void init();
