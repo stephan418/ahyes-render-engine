@@ -5,13 +5,16 @@ using namespace std;
 
 void Window::init()
 {
-	cout << "ich bin so SUPER!!!";
+	cout << "Height: " << _Height << "; Width: " << _Width << "; Name: " << _Name;
 }
 
-Window::Window() {
+Window::Window(int Width, int Height, char* Name)
+{
+	_Width = Width;
+	_Height = Height;
+	_Name = Name;
 	init();
 }
-
 
 Window::~Window()
 {

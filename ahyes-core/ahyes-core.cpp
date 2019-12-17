@@ -7,6 +7,6 @@
 int main()
 {
     std::cout << "Hello World!\n";
-	Window w = Window();
+	Window w = Window(10, 10,(char*) "Test");
 	//TODO Import opengl
 }

@@ -2,9 +2,11 @@
 class Window
 {
 private:
-	int cool = 0;
+	int _Width;
+	int _Height;
+	char* _Name;
 public:
-	Window();
+	Window(int Width, int Height, char* Name);
 	~Window();
 private:
 	void init();
