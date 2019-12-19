@@ -9,7 +9,6 @@ int main(int argc, char* args[])
 	Window w = Window(720, 420, (char*)"Fucking moron");
 	while (!w.getRunning()) {
 		w.Loop();
-
 	}
 	w.Cleanup();
 	//TODO Import opengl

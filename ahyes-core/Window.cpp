@@ -30,7 +30,7 @@ Window::Window(int Width, int Height, char* Name)
 void Window::Loop()
 {
 	srand(time(NULL));
-	SDL_SetRenderDrawColor(renderer, rand(), rand(),rand(),0xFF);
+	SDL_SetRenderDrawColor(renderer, rand() % 255, rand() % 255,rand() % 255,0xFF);
 	Render();
 }
 
