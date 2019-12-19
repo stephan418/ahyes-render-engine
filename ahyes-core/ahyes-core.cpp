@@ -4,12 +4,13 @@
 #include <iostream>
 #include "Window.h"
 
-int main()
+int main(int argc, char* args[])
 {
-	int yes;
-    std::cout << "Hello World!\n";
-	Window w = Window(720, 560,(char*) "Test");
-	std::cin >> yes;
+	Window w = Window(720, 420, (char*)"Fucking moron");
+	while (!w.getRunning()) {
+		w.Loop();
+	}
+	w.Cleanup();
 	//TODO Import opengl
-	return -255555;
+	return 0;
 }
