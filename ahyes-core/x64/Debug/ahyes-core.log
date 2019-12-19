@@ -1,2 +1,5 @@
-﻿  ahyes-core.cpp
+﻿  Window.cpp
+  ahyes-core.cpp
+  Code wird generiert...
+C:\Users\Stefan Kössner\Documents\GitHub\ahyes-render-engine\ahyes-core\Window.cpp(32,12): warning C4244:  "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
   ahyes-core.vcxproj -> C:\Users\Stefan Kössner\Documents\GitHub\ahyes-render-engine\x64\Debug\ahyes-core.exe

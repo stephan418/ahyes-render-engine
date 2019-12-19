@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <SDL.h>
+#include <time.h>
+
 using namespace std;
 
 void Window::init()
@@ -13,7 +15,7 @@ void Window::init()
 	window = SDL_CreateWindow(_Name, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, _Height, _Width, NULL);
 	primarySurface = SDL_GetWindowSurface(window);
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-	SDL_SetRenderDrawColor(renderer,0x00, 0x00, 0x00, 0xFF);
+	SDL_SetRenderDrawColor(renderer,0x00, 0x00, 0xFF, 0xFF);
 
 }
 
@@ -27,6 +29,8 @@ Window::Window(int Width, int Height, char* Name)
 
 void Window::Loop()
 {
+	srand(time(NULL));
+	SDL_SetRenderDrawColor(renderer, rand(), rand(),rand(),0xFF);
 	Render();
 }
 
